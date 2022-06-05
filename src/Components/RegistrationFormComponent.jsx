@@ -61,7 +61,7 @@ function RegistrationFormComponent() {
       break;
 
       case "passwordVer":
-        errorText = (errors.passwordError.length > 1 && value === errors.passwordError) ? "" : "Passwords must match";
+        errorText = (userData.password.length > 1 && value === userData.password) ? "" : "Passwords must match";
         setErrors((prevState)=>{
           return {
             ...prevState,
